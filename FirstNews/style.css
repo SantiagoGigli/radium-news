@@ -154,6 +154,7 @@ li{
 
 .masterarticle{
     margin-top: 10%;
+    width: 70%;
 }
 
 figcaption{
@@ -189,9 +190,8 @@ h3 span{
 
 .specbox{
     position: absolute;
-    right: 1px;
+    right: 23%;
     background-color: white;
-    margin: 20px 120px 20px 20px;
     box-sizing: border-box;
     width: 15%;
 }
@@ -248,4 +248,8 @@ h3 span{
     padding-bottom: 10px;
     border-top:2px solid  #ccc;
     border-bottom: 2px solid #db1f21;
+}
+
+figure{
+    margin: 0;
 }
