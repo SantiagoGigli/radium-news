@@ -53,38 +53,44 @@ body{
     padding-left: 0;
 }
 
-.imgtitle li:first-child{
+.imgtitle h1{
+    margin:0;
     font-family: "Roboto Condensed", Arial, sans-serif;
     font-size: 42px;
     font-weight: bold;
     letter-spacing: normal;
 }
 
-.imgtitle li:nth-child(2){
+.imgtitle h2{
     font-family: "Roboto Condensed", Arial, sans-serif;
     font-size: 20px;
     font-weight: bold;
 }
 
-.imgtitle li:nth-child(3){
+.imgtitle li{
     width: 100%;
     padding: 60px 0px 10px 0px;
     margin: 0;
 }
 
-.masterarticle{
-    margin-bottom: 50px;
+.masterblock{
+    margin-right: 0;
     line-height: 1.5;
     font-size: 16px;
+    max-width: 645px;
 }
 
-.masterarticle a{
+.masterblock a{
     color: #db1f21;
     text-decoration: none;
 }
 
-.masterarticle a:hover{
+.masterblock a:hover{
     color: red;
+}
+
+.imgarticle img{
+    width: 597px;
 }
 
 li{
@@ -123,16 +129,11 @@ li{
     fill:  #db1f21;
 }
 
-.masterblock{
-    background:#dbddde;
-    width: 75%;
-}
-
-.block1{
+.forblock{
     display: inline-block;
+    width: 50%;
     background:#dbddde;
     border-right: 1px solid #ccc;
-    width: 50%;
     box-sizing: border-box;
 }
 
@@ -141,20 +142,41 @@ li{
     padding-top: 10px;
 }
 
-.block2{
-    display: inline-block;
+.blockcontainer{
     background:#dbddde;
-    width: 45%;
+    margin-top: 1px;
+}
+
+.againstblock{
+    display: inline-block;
+    background:#dbddde;;
     box-sizing: border-box;
 }
 
-.block2 li:nth-child(4){
+.againstblock li:nth-child(3){
     color: #dbddde;
 }
 
-.masterarticle{
-    margin-top: 10%;
-    width: 70%;
+.blockcontainer span{
+    display: inline-block;
+    font-family:"Open Sans", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.blockcontainer img{
+    padding-top: 15px;
+    padding-left: 10px;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.againstblock img{
+    padding-top: 10px;
+    position: absolute;
+    box-sizing: border-box;
 }
 
 figcaption{
@@ -188,12 +210,20 @@ h3 span{
     padding: 5px 100px;
 }
 
+.paragraphblock{
+    margin: 0;
+    position: relative;
+}
+
+.paragraphblock p{
+    display: inline-block;
+    width: 50%;
+}
+
 .specbox{
     position: absolute;
-    right: 23%;
+    right: 1px;
     background-color: white;
-    box-sizing: border-box;
-    width: 15%;
 }
 
 .spectitle{
@@ -205,10 +235,38 @@ h3 span{
 }
 
 .speclist{
-    line-height: 1.5;
     color: #333333;
     box-sizing: border-box;
-    padding-right: 20px;
+    padding:0px 20px 0px 0px;
+}
+
+.speclist li{
+    padding: 0;
+}
+
+.specbox2{
+    position: absolute;
+    right: 1px;
+    background-color: white;
+    width: 40%;
+}
+
+.spectitle2{
+    text-transform: uppercase;
+    color: white;
+    background-color:  #db1f21;
+    padding: 13px 0px 13px 13px;
+    box-sizing: border-box;
+}
+
+.speclist2{
+    color: #333333;
+    box-sizing: border-box;
+    padding:0px 20px 0px 0px;
+}
+
+.speclist2 li{
+    padding: 0;
 }
 
 .fixed{
@@ -232,7 +290,6 @@ h3 span{
     list-style-type: none;
     padding: 5px 0px 5px 0px;
     font:13px "Open Sans",Arial,Sans-serif;
-
 }
 
 .fixed a{
@@ -253,3 +310,42 @@ h3 span{
 figure{
     margin: 0;
 }
+
+.masterblock h2{
+    font:24px "Roboto Condensed", Arial, sans-serif;
+    font-weight: bold;
+}
+
+.quoteblock{
+    position: relative;
+}
+
+.paragraphquote{
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+blockquote{
+    width: 40%;
+    position: absolute;
+    display: inline-block;
+    top: 50px;
+    right: 1px;
+    margin: 0;
+    border-top: solid 1px #0F1618;
+    border-bottom: solid 1px #0F1618;
+}
+
+blockquote p{
+    text-align: center;
+    padding-left: 25px;
+    font:16px "Open Sans",Arial,Sans-serif;
+    font-weight: bold;
+}
+
+blockquote img{
+    position: absolute;
+    top: 20px;
+}
+
